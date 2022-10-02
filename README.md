@@ -14,6 +14,8 @@ Questioner can be used by educators to accurately and painlessly measure student
 
 ## System Design
 
+![SysDesign](P1.png)
+
 Our system is designed as a browser extension. The web extension parses the webpage and sends the webpage to our cloud services on AWS, where NLP models analyze the text and generate relevant questions. These questions are then sent back to the user for them to answer as they read the article. The user’s responses are then sent back to our cloud services for assessment and evaluation. Once the user accurately completes all of the questions, a “certificate key” is generated for the student to submit to the teacher. This is also uploaded to our database. Teachers can then verify these keys against our online database to be certain that the student has understood the material.
 
 
@@ -28,6 +30,8 @@ Questioner's backend runs on AWS and requires custom layers to be installed in t
 
 
 ## Future Directions 
+
+![FutSysDesign](P2.png)
 
 One important issue today is the privacy of user data. Questioner can be made to completely respect user privacy while preserving all of its functionality. To preserve privacy, the webpage and user text shall be encrypted on the client side with a client generated private key before sending it to our cloud service. Without knowledge of the user’s private key, nobody else can decrypt the user text, nor the webpage the user is viewing.
 
