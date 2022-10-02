@@ -4,6 +4,7 @@ Mykyta Solonko, James Zhao, Rajat Doshi
 
 
 ## Overview
+Please also check out our [video presentation!](https://www.youtube.com/watch?v=2x2a4Jw1tvI)
 
 Attention spans and working memory have gotten shorter and shorter in schoolchildren over the past decade due to the rise in internet usage. Making things worse, much of education has shifted online with the rise of internet based textual learning. This results in a new problem: teachers may assign web pages to read and study, but student reading comprehension of those web pages is poor due to limited attention span. 
 
