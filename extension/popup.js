@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
     chrome.tabs.query({ active: true, lastFocusedWindow: true }, tabs => {
         let tabUrl = tabs[0].url;
         tabUrl = tabUrl.split("?")[0];
-        var url = 'https://ungypabgipau5dfpvbxxg6tir40inugb.lambda-url.us-east-1.on.aws/?key=bulldogs&url=' + '"' + tabUrl + '"';
+        var url = 'YOUR_AWS_LAMBDA_ENDPOINT_HERE' + '"' + tabUrl + '"';
         // Making our request 
         fetch(url, {
             method: 'GET'
