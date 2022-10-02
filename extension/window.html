@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .button {
+            display: inline-block;
+            border-radius: 4px;
+            background-color: #f4511e;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 22px;
+            padding: 15px;
+            width: 120px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 3px;
+        }
+
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .button:hover span {
+            padding-right: 25px;
+        }
+
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        #answer {
+            width: 250px;
+            height: 80px;
+        }
+    </style>
+    <script src="popup.js"></script>
+</head>
+
+<body>
+    <div style="width:350px;">
+        <div class="center">
+
+            <p style="font-size: 20px" id="question" style="word-break: break-all">Waiting for first question...</p>
+            <br>
+            <textarea id="answer" placeholder="Type your answer here..."></textarea>
+            <br>
+            <br>
+            <button id="button" class="button" style="vertical-align:middle"><span>Next</span></button>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
