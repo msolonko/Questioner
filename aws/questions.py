@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 Q_API_URL = "https://api-inference.huggingface.co/models/mrm8488/t5-base-finetuned-question-generation-ap"
 A_API_URL = "https://api-inference.huggingface.co/models/deepset/roberta-base-squad2"
-API_TOKEN = ""
+API_TOKEN = "YOUR_HUGGINGFACE_API_TOKEN_HERE"
 headers = {"Authorization": f"Bearer {API_TOKEN}"}
 
 def generate_question(text):
